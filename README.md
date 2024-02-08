@@ -1,3 +1,3 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-Sixth task on GO IT
+Seventh task on GO IT
