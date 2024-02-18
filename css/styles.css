@@ -90,6 +90,12 @@ a.navigate:hover{
     font-weight: bold;
     color:var(--IRIS);
 }
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 ul.container1{
     padding-top: 50px;
@@ -506,3 +512,20 @@ button:hover, a.sect-options-link:hover{
     border: 1px solid white;
 }
 
+/*Media Query */
+
+@media (min-width: 428px){
+    .container{
+        width: 480px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        width: 768px;
+    } 
+}
+@media (min-width: 1200px){
+    .container{
+        width: 1200px;
+    }
+}
