@@ -73,6 +73,9 @@ h2{
     font-weight: 500;
     font-size: 17px;
 }
+.list-navigation{
+    display:flex;
+}
 .studio-footer{
     color:white;
 }
@@ -90,18 +93,19 @@ a.navigate:hover{
     font-weight: bold;
     color:var(--IRIS);
 }
-.container{
+.container,
+.team{
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
-ul.container1{
+/* ul.container1{
+} */
+.container1{
     padding-top: 50px;
     padding-bottom:100px;
-}
-.container1{
     display:flex;
     justify-content: space-around;
     margin: 0 50px;
@@ -514,18 +518,18 @@ button:hover, a.sect-options-link:hover{
 
 /*Media Query */
 
-@media (min-width: 428px){
+/* @media (min-width: 428px){
     .container{
-        width: 480px;
+        width: 428px;
     }
 }
 @media (min-width: 768px){
     .container{
         width: 768px;
     } 
-}
+} */
 @media (min-width: 1200px){
     .container{
-        width: 1200px;
+        width: auto;
     }
 }
