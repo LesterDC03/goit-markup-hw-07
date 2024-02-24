@@ -64,6 +64,8 @@ a.butones{
     color: white;
     font-size: 18px;
     padding: 100px 50px;
+    display: flex;
+    justify-content: center;
 }
 
 h2{
@@ -74,9 +76,11 @@ h2{
 .navigation{
     font-weight: 500;
     font-size: 17px;
+    position: relative;
 }
 .list-navigation{
     display:flex;
+    align-items: flex-end;
 }
 .studio-footer{
     color:white;
@@ -114,7 +118,9 @@ a.navigate:hover{
 }
 .top{
     display:flex;
-    padding: 20px 100px;
+    padding: 15px 100px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: flex-start;
     border-bottom: 2px solid var(--LIGHT-SLATE);
 }
@@ -135,9 +141,9 @@ a, nav, .information{
 li.info{
     padding:0 20px;
 }
-section.information{
+.information{
     margin: auto;
-    margin-right: 0;
+    margin-right:0;
 }
 div.team{
     background-color: #ededf1;
@@ -155,9 +161,7 @@ div.card{
     border-bottom-right-radius: 5px;
     /* box-shadow: #000000; */
 }
-h3.tag{
-    
-}
+
 h3.abt{
     padding-top: 8px;
     padding-bottom: 8px;
@@ -206,6 +210,7 @@ h3.customers{
     display: flex;
     justify-content: center;
     text-align: center;
+
 }
 .customers-list-items{
     border: 1px solid var(--LIGHT-SLATE);
@@ -215,9 +220,14 @@ h3.customers{
 .customers{
     margin-bottom: 50px;
 }
+.customers-items{
+    width: 180px;
+}
 .list-footer-items{
-    margin:0 auto;
-    padding: 0 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .soc-icons-footer{
     padding-top: 15px;
@@ -264,6 +274,8 @@ button:hover, a.sect-options-link:hover{
     overflow: visible;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .list-categories-header{
     padding-bottom: 15px;
@@ -289,8 +301,9 @@ button:hover, a.sect-options-link:hover{
     border-radius:2px;
     background-color: var(--IRIS);
     position: absolute;
-    top: 58px;
-    z-index: 2;
+    top: 33px;
+    left: 50px;
+    /* z-index: 2; */
 }
 .active-port{
     color: var(--IRIS);
@@ -303,8 +316,8 @@ button:hover, a.sect-options-link:hover{
     border-radius:2px;
     background-color: var(--IRIS);
     position: absolute;
-    top: 58px;
-    left: 345px;
+    top: 33px;
+    left: 148px;
     z-index: 9999;
 }
 .active-con{
@@ -318,8 +331,8 @@ button:hover, a.sect-options-link:hover{
     border-radius:2px;
     background-color: var(--IRIS);
     position: absolute;
-    top: 58px;
-    left: 465px;
+    top: 33px;
+    left: 265px;
     z-index: 9999;
 }
 .categories-img{
@@ -520,14 +533,25 @@ button:hover, a.sect-options-link:hover{
 /*Media Query */
 
 @media (min-width: 428px){
-
+    .container,
+    .list-footer,
+    .top{
+        width: 428px;
+    }
 }
 @media (min-width: 768px){
+    .container,
+    .list-footer,
+    .top{
+        width: 768px;
+    }
 
 }
 @media (min-width: 1200px){
     .container,
-    .list-footer{
+    .list-footer,
+    .top,
+    .list-categories{
         width: 1200px;
     }
 }
