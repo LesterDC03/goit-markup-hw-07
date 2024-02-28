@@ -540,18 +540,15 @@ button:hover, a.sect-options-link:hover{
     }
 }
 @media (min-width: 768px){
-    .container,
-    .list-footer,
-    .top{
-        width: 768px;
-    }
-
+  
+   
 }
+
 @media (min-width: 1200px){
-    .container,
+    /* .container,
     .list-footer,
     .top,
     .list-categories{
         width: 1200px;
-    }
+    } */
 }
