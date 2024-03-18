@@ -80,7 +80,7 @@ h2{
 }
 .list-navigation{
     display:flex;
-    align-items: flex-end;
+    align-items: end;
 }
 .studio-footer{
     color:white;
@@ -198,9 +198,9 @@ p.abt{
     padding: 10px;
     color: white;
 }
-h3.customers{
+/* h3.customers{
     text-align: center;
-}
+} */
 .list-footer{
     display:flex;
     justify-content: center;
@@ -219,7 +219,10 @@ h3.customers{
 }
 .customers{
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .customers-items{
     width: 180px;
 }
@@ -532,23 +535,30 @@ button:hover, a.sect-options-link:hover{
 
 /*Media Query */
 
-@media (min-width: 428px){
-    .container,
-    .list-footer,
-    .top{
-        width: 428px;
-    }
-}
-@media (min-width: 768px){
-  
-   
+@media (min-width: 428px), (max-width:767px){
+
 }
 
-@media (min-width: 1200px){
-    /* .container,
-    .list-footer,
+@media (min-width: 768px),(max-width: 1157px){
     .top,
-    .list-categories{
-        width: 1200px;
-    } */
+    .container,
+    .customers,
+    .footer{
+        width: 768px;
+    }
+    .icons{
+        display:none;
+    }
+    .container1{
+        display: flex;
+    }
+}
+
+@media (min-width: 1158px){
+    .top,
+    .container,
+    .customers,
+    .footer{
+        width: 1158px;
+    }
 }
