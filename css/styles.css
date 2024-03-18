@@ -28,7 +28,7 @@ a {
 li{
     list-style-type: none;
 }
-h1{
+h1.hero{
     width: 100%;
     font-size: 55px;
     text-align: center;
@@ -535,30 +535,18 @@ button:hover, a.sect-options-link:hover{
 
 /*Media Query */
 
-@media (min-width: 428px), (max-width:767px){
+@media (min-width: 428px),(max-width: 767px){
 
 }
+@media (min-width: 768px),(max-width:1157px){
 
-@media (min-width: 768px),(max-width: 1157px){
-    .top,
-    .container,
-    .customers,
-    .footer{
-        width: 768px;
-    }
-    .icons{
-        display:none;
-    }
-    .container1{
-        display: flex;
-    }
 }
-
 @media (min-width: 1158px){
     .top,
     .container,
-    .customers,
-    .footer{
+    .list-footer,{
         width: 1158px;
+        padding-left:auto;
+        padding-right:auto;
     }
 }
