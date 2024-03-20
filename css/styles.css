@@ -100,8 +100,8 @@ a.navigate:hover{
     color:var(--IRIS);
 }
 .container{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: auto;
     margin-right: auto;
     /* border: 1px solid black; */
@@ -536,17 +536,45 @@ button:hover, a.sect-options-link:hover{
 /*Media Query */
 
 @media (min-width: 428px),(max-width: 767px){
+        .top,
+        .container,
+        .list-footer{
+            width: 428px;
+        }
 
 }
 @media (min-width: 768px),(max-width:1157px){
+        .top,
+        .container,
+        .list-footer {
+            width: 768px;
+            padding-left:0;
+            padding-right:0;
+        }
+        .top{
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 0;
+        }
+
+        .list-navigation-info{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .list-navigation-menu{
+            display: flex;
+            align-items: baseline;
+        }
+        div.icons{
+            display:none;
+        }
 
 }
 @media (min-width: 1158px){
     .top,
     .container,
-    .list-footer,{
+    .list-footer{
         width: 1158px;
-        padding-left:auto;
-        padding-right:auto;
+        padding: 15px;
     }
 }
