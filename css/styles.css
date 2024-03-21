@@ -584,31 +584,43 @@ button:hover, a.sect-options-link:hover{
             /* font-size: larger; */
          }
          .about-team{
+            margin:0;
             flex-wrap:wrap;
-            flex-basis: calc(100/2-30px);
+            flex-basis: calc(100%/2-30px);
          }
-
-    }
-    @media (min-width: 1158px){
+         .customers-list{
+            display:flex;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+            flex-basis: calc(100%/3 - 30px);
+         }
+        .customers-items{
+            width: 200px;
+        }
+        }
+@media (min-width: 1158px){
         .top,
         /* .container, */
         .container2,
         .list-footer{
-        width: 1158px;
-        padding: 15px;
-    }
-    .list-navigation-info{
-        display:flex;
-        width: auto;
-    }
-    .icons{
-        display:flex;
-        width:100%; 
-    }
-    .what-we-do{
-        display:block;
-    }
-    .container1{
-        flex-wrap: nowrap;
-    }
-}
+            width: 1158px;
+            padding: 15px;
+        }
+            .list-navigation-info{
+                display:flex;
+                width: auto;
+            }
+            .icons{
+                display:flex;
+                width:100%; 
+            }
+            .what-we-do{
+                display:block;
+            }
+            .container1{
+                flex-wrap: nowrap;
+            }
+            .customers-items{
+               width: 180px;
+            }
+        }
