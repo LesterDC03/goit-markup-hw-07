@@ -111,11 +111,13 @@ a.navigate:hover{
     padding-top: 50px;
     padding-bottom:100px;
     display:flex;
+    /* flex-wrap: nowrap; */
     justify-content: space-around;
     margin: 0 50px;
     padding: 0 50px;
     /* border: 1px dashed black; */
 }
+
 .top{
     display:flex;
     padding: 15px 100px;
@@ -182,6 +184,8 @@ div.icons{
 }
 li.about{
     margin: 12px;
+    /* display:flex;
+    flex-wrap:wrap; */
 }
 p.abt{
     line-height: 24px;
@@ -537,7 +541,8 @@ button:hover, a.sect-options-link:hover{
 
 @media (min-width: 428px),(max-width: 767px){
         .top,
-        .container,
+        /* .container, */
+        .container2,
         .list-footer{
             width: 428px;
         }
@@ -545,7 +550,8 @@ button:hover, a.sect-options-link:hover{
 }
 @media (min-width: 768px),(max-width:1157px){
         .top,
-        .container,
+        /* .container, */
+        .container2,
         .list-footer {
             width: 768px;
             padding-left:0;
@@ -556,25 +562,53 @@ button:hover, a.sect-options-link:hover{
             padding-right: 15px;
             padding-bottom: 0;
         }
-
+        
         .list-navigation-info{
             display: flex;
             flex-wrap: wrap;
+            width: 210px;
         }
         .list-navigation-menu{
             display: flex;
             align-items: baseline;
         }
-        div.icons{
-            display:none;
+        .icons{
+            display: none;
         }
+        .what-we-do{
+            display: none;
+        }
+        .about-them{
+            flex-wrap:wrap;
+            flex-basis: calc(100%/4-30px);
+            /* font-size: larger; */
+         }
+         .about-team{
+            flex-wrap:wrap;
+            flex-basis: calc(100/2-30px);
+         }
 
-}
-@media (min-width: 1158px){
-    .top,
-    .container,
-    .list-footer{
+    }
+    @media (min-width: 1158px){
+        .top,
+        /* .container, */
+        .container2,
+        .list-footer{
         width: 1158px;
         padding: 15px;
+    }
+    .list-navigation-info{
+        display:flex;
+        width: auto;
+    }
+    .icons{
+        display:flex;
+        width:100%; 
+    }
+    .what-we-do{
+        display:block;
+    }
+    .container1{
+        flex-wrap: nowrap;
     }
 }
