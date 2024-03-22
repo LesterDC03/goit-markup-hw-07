@@ -579,9 +579,13 @@ button:hover, a.sect-options-link:hover{
             display: none;
         }
         .about-them{
-            flex-wrap:wrap;
-            flex-basis: calc(100%/4-30px);
-            /* font-size: larger; */
+            flex-wrap: wrap;
+            flex-basis: calc(100%/2-30px);
+            margin:0;
+            padding:15px;
+         }
+         .about{
+            width: 340px;
          }
          .about-team{
             margin:0;
@@ -597,6 +601,11 @@ button:hover, a.sect-options-link:hover{
         .customers-items{
             width: 200px;
         }
+        .list-footer{
+            display:flex;
+            flex-wrap: wrap;
+            flex-basis: calc(100/2 - 30px);
+        }
         }
 @media (min-width: 1158px){
         .top,
@@ -606,21 +615,25 @@ button:hover, a.sect-options-link:hover{
             width: 1158px;
             padding: 15px;
         }
-            .list-navigation-info{
-                display:flex;
-                width: auto;
-            }
-            .icons{
-                display:flex;
-                width:100%; 
-            }
-            .what-we-do{
-                display:block;
-            }
-            .container1{
-                flex-wrap: nowrap;
-            }
-            .customers-items{
-               width: 180px;
-            }
+        .list-navigation-info{
+            display:flex;
+            width: auto;
+        }
+        .icons{
+            display:flex;
+            width:100%; 
+        }
+        .what-we-do{
+            display:block;
+        }
+        .container1{
+            flex-wrap: nowrap;
+        }
+        .customers-items{
+            width: 180px;
+        }
+        .about-them{
+            margin:auto;
+            width: auto;
+         }
         }
